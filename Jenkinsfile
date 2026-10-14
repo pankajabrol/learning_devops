@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        OPENSHIFT_SERVER = 'https://api.ocp.labs.networknuts.net:6443'
+        OPENSHIFT_SERVER = 'https://api.crc.testing:6443'
         OPENSHIFT_TOKEN = credentials('jenkins-openshift-token')
         OPENSHIFT_NAMESPACE = 'devops'
         GIT_REPO_URL = 'https://github.com/networknuts/jenkins-openshift-pipeline.git'
