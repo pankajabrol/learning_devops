@@ -7,6 +7,7 @@ pipeline {
         OPENSHIFT_NAMESPACE = 'devops'
         GIT_REPO_URL = 'https://github.com/pankajabrol/learning_devops/'
         DEPLOYMENT_YAML_PATH = 'deployment.yml'
+        OC_CMD = "/tmp/oc"
     }
     
     stages {
