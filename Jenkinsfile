@@ -32,7 +32,7 @@ pipeline {
             steps {
                 script {
                     // Apply deployment YAML
-                    sh "oc apply -f ${DEPLOYMENT_YAML_PATH} -n ${OPENSHIFT_NAMESPACE}"
+                    sh "/tmp/oc apply -f ${DEPLOYMENT_YAML_PATH} -n ${OPENSHIFT_NAMESPACE}"
                 }
             }
         }
