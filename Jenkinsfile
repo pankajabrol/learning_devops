@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     // Log in to OpenShift cluster
-                    sh "oc login --token=${OPENSHIFT_TOKEN} --server=${OPENSHIFT_SERVER} --insecure-skip-tls-verify=true"
+                    sh "/tmp/oc login --token=${OPENSHIFT_TOKEN} --server=${OPENSHIFT_SERVER} --insecure-skip-tls-verify=true"
                 }
             }
         }
