@@ -5,7 +5,7 @@ pipeline {
         OPENSHIFT_SERVER = 'https://api.crc.testing:6443'
         OPENSHIFT_TOKEN = credentials('jenkins-openshift-token')
         OPENSHIFT_NAMESPACE = 'devops'
-        GIT_REPO_URL = 'https://github.com/networknuts/jenkins-openshift-pipeline.git'
+        GIT_REPO_URL = 'https://github.com/pankajabrol/learning_devops/'
         DEPLOYMENT_YAML_PATH = 'deployment.yml'
     }
     
